@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+    <style type="text/css">
+      @keyframes ldio-1rte8bix3mj {
+        0% {
+          transform: translate(-50%, -50%) rotate(0deg);
+        }
+        100% {
+          transform: translate(-50%, -50%) rotate(360deg);
+        }
+      }
+      .ldio-1rte8bix3mj div {
+        position: absolute;
+        width: 132px;
+        height: 132px;
+        border: 8px solid #aec5ee;
+        border-top-color: transparent;
+        border-radius: 50%;
+      }
+      .ldio-1rte8bix3mj div {
+        animation: ldio-1rte8bix3mj 1s linear infinite;
+        top: 100px;
+        left: 100px;
+      }
+      .spinner {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        display: none;
+        overflow: hidden;
+      }
+      .ldio-1rte8bix3mj {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform: translateZ(0) scale(1);
+        backface-visibility: hidden;
+        transform-origin: 0 0;
+      }
+      .ldio-1rte8bix3mj div {
+        box-sizing: content-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <h1 class="title">Поиск репозиториев</h1>
+      <form action="submit" class="search">
+        <input type="search" name="name" class="search-input" id="input" />
+        <button class="search-button" type="submit" id="button">Поиск</button>
+      </form>
+      <div class="main">
+        <table id="table">
+          <thead>
+            <tr>
+              <th>Название:</th>
+              <th>Язык:</th>
+              <th>Описание:</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody class="list" id="table-body"></tbody>
+        </table>
+        <div class="spinner">
+          <div class="ldio-1rte8bix3mj">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
